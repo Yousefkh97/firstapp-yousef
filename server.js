@@ -67,8 +67,9 @@ app.put('/addElement', function (req, res) {
 })
 
 
+const port = process.env.PORT || 3000;
 
-app.listen(3000, () => { console.log("App is Listening to 3000") })
+app.listen(port, () => { console.log("App is Listening to port", port) })
 
 
 
